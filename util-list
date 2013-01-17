@@ -3,7 +3,7 @@ This is a list of all the possible utils I can think of. I'll be filling it up e
 say - prints all the arguments one after another, terminated with a newline. Absolutely no options or special handling, just printing.
 desc - resolves backspace escapes from stdin to stdout.
 esc - escapes non-printable characters and characters with known escapes from stdin to stdout.
-esca - escapes ALL characters (as octal) from stdin to stdout.
+esca - escapes ALL characters (as octal backslash escapes) from stdin to stdout.
 spipe - read from stdin, write to stdout. handle all possible errors in I/O operations.
 tpipe - tight pipe. takes one argument as the speed in bytes/second I/O should be done, also does the same checks as spipe.
 meter - measures read and write speeds (output is sent to stderr), prints the averages and amount of data sent when input or output stops.
