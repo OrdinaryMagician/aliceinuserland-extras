@@ -1,4 +1,6 @@
-CFLAGS := -std=c99 -Wall -Wextra -pedantic -O2 -pipe -Wno-unused-function -Wno-unused-parameter -Isrc/
+CFLAGS := -std=c99 -Wall -Wextra -Werror -pedantic -O2 -pipe \
+	  -Wno-unused-function -Wno-unused-parameter -Wno-empty-body \
+	  -Wno-sequence-point -Isrc/
 PREFIX ?= /usr/local
 .PHONY : clean install
 UTILS := say

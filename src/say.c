@@ -9,12 +9,6 @@
 int main( int argc, char **argv )
 {
 	argv++;
-	while ( *argv )
-	{
-		printf("%s",*argv);
-		if ( *(argv++) )
-			printf(" ");
-	}
-	printf("\n");
+	while ( *argv && printf("%s%c",*argv++,*argv?' ':'\n') );
 	return 0;
 }
